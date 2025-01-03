@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Fredoka:wght@300..700&family=Michroma&family=Playwrite+AU+VIC+Guides&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fredoka;
+    text-decoration: none;
+}
+
+.placer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    max-width: 1400px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.navbar .logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu a .bx {
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: red;
+}
+
+.navbar .cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .cart .cart-icon {
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar .cart .cart-icon::after {
+    content: "0";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+
+.navbar .contact-btn {
+    background-color: #FFC107;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar .contact-btn:hover {
+    background-color: #FFA000;
+    color: black;
+}
+
+.navbar .hamburger {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbar .hamburger .animation-line-menu-1,
+.animation-line-menu-2,
+.animation-line-menu-3 {
+    width: 100%;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: black;
+    animation-name: ainmation-line-menu 0.5s eyes inherit;
+}
+
+.animation-line-menu-1 {
+    animation-name: line-menu-1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.animation-line-menu-2 {
+    animation-name: line-menu-2;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+
+.animation-line-menu-3 {
+    animation-name: line-menu-3;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line-menu-1 {
+    0% {
+        width: 20%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes line-menu-2 {
+    0% {
+        width: 20%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes line-menu-3 {
+    0% {
+        width: 20%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar .menu a:hover .bx {
+    transform: rotate(90deg);
+}
+
+.home-section {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    position: relative;
+    padding: 50px 0;
+}
+
+.home-section-container {
+    width: 90%;
+    height: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+
+}
+
+.home-section-child {
+    width: 100%;
+    height: 100%;
+}
+
+.home-section-child-left {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 0 0 0 50px;
+}
+
+.home-section-child-left h1 {
+    font-size: 100px;
+    color: #fff;
+    z-index: 1;
+}
+
+.home-section-child-left p {
+    font-size: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.home-section-child-left-btn {
+    width: 200px;
+    height: 70px;
+    background-color: orange;
+    border: none;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid orange;
+    z-index: 3;
+    transition: 0.3s ease;
+}
+
+.home-section-child-left-btn:hover {
+    border: 2px solid orange;
+    background: none;
+}
+
+.home-section-child-left-btn a {
+    color: black;
+    display: flex;
+}
+
+.home-section-child-left-btn:hover a {
+    color: #fff !important;
+}
+
+.home-section-child-right img {
+    height: 500px;
+    z-index: 3;
+    animation: head-pizza 60s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes head-pizza {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(380deg);
+    }
+}
+
+.animation-position-img {
+    position: absolute;
+    z-index: 0;
+    margin-top: 10px;
+    animation: animation-position-img-1 5s ease infinite;
+}
+
+.animation-position-img:nth-child(1) {
+    animation: animation-position-img-2 5s ease infinite;
+}
+
+.animation-position-img:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 90%;
+    animation: animation-position-img-2 4s ease infinite;
+}
+
+.animation-position-img:nth-child(3) {
+    margin-top: 100px;
+    margin-left: 40%;
+    animation: animation-position-img-3 6s ease infinite;
+}
+
+.animation-position-img:nth-child(4) {
+    margin-left: 20%;
+    margin-top: 200px;
+    animation: animation-position-img-4 4s ease infinite;
+}
+
+.animation-position-img:nth-child(5) {
+    margin-top: 260px;
+    margin-left: 50%;
+    animation: animation-position-img-5 7s ease infinite;
+}
+
+@keyframes animation-position-img-2 {
+    0% {
+        margin-top: 30px;
+    }
+
+    50% {
+        margin-top: 70px
+    }
+
+    100% {
+        margin-top: 30px
+    }
+}
+
+@keyframes animation-position-img-3 {
+    0% {
+        margin-top: 100px;
+    }
+
+    50% {
+        margin-top: 170px
+    }
+
+    100% {
+        margin-top: 100px
+    }
+}
+
+@keyframes animation-position-img-4 {
+    0% {
+        margin-top: 200px;
+    }
+
+    50% {
+        margin-top: 270px
+    }
+
+    100% {
+        margin-top: 200px
+    }
+}
+
+@keyframes animation-position-img-5 {
+    0% {
+        margin-top: 260px;
+    }
+
+    50% {
+        margin-top: 320px
+    }
+
+    100% {
+        margin-top: 260px
+    }
+}
+
+main{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.learn-something-section{
+    width: 90%;
+    max-width: 1400px;
+    height: 300px;
+}

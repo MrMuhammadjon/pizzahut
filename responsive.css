@@ -1,0 +1,50 @@
+@media(max-width:1200px) {
+    .navbar .logo img {
+        height: 50px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 25px;
+    }
+
+    .navbar .menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .home-section-child-left h1 {
+        font-size: 80px;
+    }
+
+    .home-section-child-right img {
+        height: 400px;
+        z-index: 3;
+        animation: head-pizza 60s ease infinite;
+        border-radius: 50%;
+    }
+}
+
+@media(max-width:992px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+    }
+
+    .navbar .logo img {
+        height: 60px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {}
