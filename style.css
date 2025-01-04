@@ -252,9 +252,19 @@ header {
     background: none;
 }
 
+.head-buttons{
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .home-section-child-left-btn a {
     color: black;
     display: flex;
+}
+
+.home-section-child-left-btn:nth-child(2){
+    display: none;
 }
 
 .home-section-child-left-btn:hover a {
