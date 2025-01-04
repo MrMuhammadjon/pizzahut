@@ -454,3 +454,60 @@ main {
         margin-top: 60px
     }
 }
+
+.Explore-Our-Products{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: red;
+    padding: 100px 0px 100px 0px;
+}
+
+.Explore-Our-Products-container{
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+}
+
+.Explore-Our-Products-header{
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+}
+
+.Explore-Our-Products-header p{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.Explore-Our-Products-header h1{
+    font-size: 50px;
+    font-family: Oswald;
+}
+
+.Explore-Our-Products-main{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    padding: 70px 0 0 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-cards{
+    width: 100%;
+    height: 400px;
+    background-color: #FFA000;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-cards p{
+    font-size: 20px;
+}
+
+.product-cards h1{
+    font-size: 30px;
+    color: white;
+}
