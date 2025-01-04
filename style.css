@@ -291,7 +291,7 @@ header {
 
 .animation-position-img:nth-child(2) {
     margin-top: 30px;
-    margin-left: 90%;
+    margin-left: 85%;
     animation: animation-position-img-2 4s ease infinite;
 }
 

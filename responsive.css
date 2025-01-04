@@ -45,6 +45,19 @@
     .navbar .logo h1 {
         font-size: 30px;
     }
+
+    .home-section-child-right img {
+        height: 300px;
+        z-index: 3;
+        animation: head-pizza 60s ease infinite;
+        border-radius: 50%;
+    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+
+}
