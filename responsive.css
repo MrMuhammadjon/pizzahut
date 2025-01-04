@@ -74,7 +74,7 @@
 
     .animation-position-img:nth-child(2) {
         margin-top: 600px;
-        margin-left: 70%;
+        margin-left: 65%;
         animation: animation-position-img-2 4s ease infinite;
     }
 
@@ -128,5 +128,13 @@
 
     .home-section-child-left p {
         font-size: 18px;
+    }
+
+    .home-section-child-left {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 0 50px 0 50px;
+        width: 90%;
     }
 }
