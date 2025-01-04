@@ -105,6 +105,12 @@
             margin-top: 350px
         }
     }
+
+    .animation-position-img:nth-child(5) {
+        margin-top: 260px;
+        margin-left: 60%;
+        animation: animation-position-img-5 7s ease infinite;
+    }
 }
 
 @media (max-width: 576px) {
