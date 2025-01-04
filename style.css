@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Fredoka:wght@300..700&family=Michroma&family=Playwrite+AU+VIC+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Fredoka:wght@300..700&family=Michroma&family=Oswald:wght@200..700&family=Playwrite+AU+VIC+Guides&display=swap');
+
 
 * {
     margin: 0;
@@ -252,7 +254,7 @@ header {
     background: none;
 }
 
-.head-buttons{
+.head-buttons {
     justify-content: start;
     flex-wrap: wrap;
     gap: 20px;
@@ -263,7 +265,7 @@ header {
     display: flex;
 }
 
-.home-section-child-left-btn:nth-child(2){
+.home-section-child-left-btn:nth-child(2) {
     display: none;
 }
 
@@ -300,25 +302,21 @@ header {
 }
 
 .animation-position-img:nth-child(2) {
-    margin-top: 30px;
     margin-left: 85%;
     animation: animation-position-img-2 4s ease infinite;
 }
 
 .animation-position-img:nth-child(3) {
-    margin-top: 100px;
     margin-left: 40%;
     animation: animation-position-img-3 6s ease infinite;
 }
 
 .animation-position-img:nth-child(4) {
     margin-left: 20%;
-    margin-top: 200px;
     animation: animation-position-img-4 4s ease infinite;
 }
 
 .animation-position-img:nth-child(5) {
-    margin-top: 260px;
     margin-left: 50%;
     animation: animation-position-img-5 7s ease infinite;
 }
@@ -379,14 +377,80 @@ header {
     }
 }
 
-main{
+main {
     width: 100%;
     height: auto;
     flex-direction: column;
 }
 
-.learn-something-section{
+.learn-something {
     width: 90%;
     max-width: 1400px;
-    height: 300px;
+    height: auto;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 100px 0px;
+}
+
+.learn-something-child-left,
+.learn-something-child-right {
+    flex: 1;
+    z-index: 1;
+}
+
+.learn-something-child-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.learn-something-child-right p {
+    font-size: 20px;
+    color: #FFC222;
+}
+
+.learn-something-child-right h1 {
+    text-transform: capitalize;
+    font-family: Oswald;
+    font-weight: 500;
+}
+
+.text-Michael-V {
+    gap: 20px;
+    justify-content: start;
+}
+
+.text-Michael-V img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-Michael-V h1{
+    font-size: 20px;
+}
+
+.text-Michael-V p{
+    font-size: 18px;
+    color: gray;
+}
+
+.animation-position-img-6{
+    position: absolute;
+    left: -200px;
+    animation: animation-position-img-6 3s ease infinite;
+}
+
+@keyframes animation-position-img-6 {
+    0% {
+        margin-top: 60px;
+    }
+
+    50% {
+        margin-top: 120px
+    }
+
+    100% {
+        margin-top: 60px
+    }
 }

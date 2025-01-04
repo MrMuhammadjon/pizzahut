@@ -111,6 +111,16 @@
         margin-left: 60%;
         animation: animation-position-img-5 7s ease infinite;
     }
+
+    .learn-something {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .learn-something-child-left,
+    .learn-something-child-right {
+        padding: 0px 20px;
+    }
 }
 
 @media (max-width: 576px) {}
