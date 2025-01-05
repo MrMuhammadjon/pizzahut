@@ -52,6 +52,12 @@
         animation: head-pizza 60s ease infinite;
         border-radius: 50%;
     }
+
+
+
+    .heading-content {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -123,7 +129,11 @@
     }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .heading-content {
+        font-size: 2rem;
+    }
+}
 
 @media (max-width: 460px) {
     .home-section-child-left h1 {
