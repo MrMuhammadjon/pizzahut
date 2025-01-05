@@ -519,7 +519,7 @@ main {
 }
 
 
-/* @keyframes animatedproductcards{
+@keyframes animatedproductcards{
     0%{
         transform: translateY(8%);
     } 50%{
@@ -528,7 +528,7 @@ main {
     100%{
         transform: translateY(8%);
     }
-} */
+}
 
 .product-cards:hover{
     transform: scale(1.1);
