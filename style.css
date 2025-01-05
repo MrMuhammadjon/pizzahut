@@ -623,7 +623,6 @@ main {
 
 .expoler-news-main {
     width: 100%;
-    padding: 20px;
     gap: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -701,9 +700,7 @@ main {
 
   .testimonial {
     width: 90%;
-    max-width: 800px;
     margin: 20px;
-    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     text-align: center;
@@ -724,7 +721,7 @@ main {
   }
   
   .quote {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
     color: #555;
     margin: 20px 0;
@@ -769,6 +766,7 @@ footer {
     width: 100%;
     padding: 20px 10%;
     position: relative;
+    background-color: #F5F8FD;
 }
 
 .footer-container {
