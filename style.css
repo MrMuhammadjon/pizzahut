@@ -108,7 +108,8 @@ header {
     color: black;
 }
 
-.navbar .hamburger {
+.navbar .hamburger,
+.hamburger-2 {
     flex-direction: column;
     justify-content: space-around;
     width: 40px;
@@ -116,7 +117,7 @@ header {
     cursor: pointer;
 }
 
-.navbar .hamburger .animation-line-menu-1,
+.animation-line-menu-1,
 .animation-line-menu-2,
 .animation-line-menu-3 {
     width: 100%;
@@ -126,19 +127,22 @@ header {
     animation-name: ainmation-line-menu 0.5s eyes inherit;
 }
 
-.animation-line-menu-1 {
+.animation-line-menu-1,
+.animation-line-menu-1-2 {
     animation-name: line-menu-1;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
-.animation-line-menu-2 {
+.animation-line-menu-2,
+.animation-line-menu-2-2 {
     animation-name: line-menu-2;
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
 }
 
-.animation-line-menu-3 {
+.animation-line-menu-3,
+.animation-line-menu-3-2 {
     animation-name: line-menu-3;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -511,9 +515,9 @@ main {
     border: 2px solid #FFA000;
 }
 
-.product-cards:hover{
+.product-cards:hover {
     background-color: red;
-    transform: translateY(-10% );
+    transform: translateY(-10%);
 }
 
 .product-cards p {
@@ -550,7 +554,7 @@ main {
     cursor: pointer;
 }
 
-.reklam{
+.reklam {
     width: 100%;
     height: 600px;
     background: url(deal-of-thday-img/4.png);
@@ -559,18 +563,18 @@ main {
     margin-top: 100PX;
 }
 
-.reklamni-child{
+.reklamni-child {
     flex: 1;
     height: 100%;
 }
 
-.reklma-left{
+.reklma-left {
     align-items: end;
     flex-direction: column;
     gap: 20px;
 }
 
-.reklam-next-button{
+.reklam-next-button {
     width: 50px;
     height: 50px;
     background-color: #f39c12;
@@ -579,15 +583,15 @@ main {
     transition: 0.5s ease;
 }
 
-.reklam-next-button:hover{
+.reklam-next-button:hover {
     background-color: #ebc280;
 }
 
-.reklam-next-button .bx{
+.reklam-next-button .bx {
     font-size: 20px;
 }
 
-.add-next-list-reklama-button{
+.add-next-list-reklama-button {
     background-color: #ddd;
 }
 
@@ -607,7 +611,7 @@ main {
     font-weight: bold;
 }
 
-.deal-of-the-day h1{
+.deal-of-the-day h1 {
     font-family: Oswald;
 }
 
@@ -886,13 +890,13 @@ main {
     cursor: pointer;
 }
 
-.follow-main{
+.follow-main {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
 }
 
-.follow-main img{
+.follow-main img {
     flex: 1;
     height: 200px;
     object-fit: cover;
@@ -1103,4 +1107,69 @@ footer {
     z-index: 0;
     right: 0%;
     animation: animatedproductcards 4s ease infinite;
+}
+
+.menu-siderbar {
+    max-width: 400px;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    right: -300px;
+    transition: 0.3s ease;
+    justify-content: space-evenly;
+}
+
+.open-sidebar-l {
+    right: 0px;
+}
+
+.logo-2 {
+    color: red;
+}
+
+.logo-2 img {
+    height: 50px;
+}
+
+.logo-2 h1 {
+    font-size: 20px;
+}
+
+.animation-line-menu-1-2,
+.animation-line-menu-2-2,
+.animation-line-menu-3-2 {
+    width: 100%;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: black;
+    animation-name: ainmation-line-menu 0.5s eyes inherit;
+}
+
+.menu-main {
+    width: 90%;
+    height: 80%;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+    padding: 0 0 0 50px;
+}
+
+.menu-main a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.menu-main a:hover {
+    color: red;
+    transform: translateX(10%);
 }
