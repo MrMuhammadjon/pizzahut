@@ -127,11 +127,46 @@
     .learn-something-child-right {
         padding: 0px 20px;
     }
+
+    .reklam{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 576px) {
     .heading-content {
         font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    .Explore-Our-Products-header h1,
+    .expoler-news-header h1 {
+        font-size: 40px;
+    }
+
+    .follow-header h1 {
+        font-size: 30px;
+        font-family: Oswald;
+        padding: 20px 0px;
+    }
+
+    .follow-header p{
+        padding: 20px 0;
+    }
+
+    .newsletter-content{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .newsletter-content{
+        padding: 100px 50px 10px 50px;
+    }
+    .follow-section{
+        gap: 90px;
     }
 }
 
